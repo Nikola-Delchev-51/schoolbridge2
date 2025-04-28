@@ -13,12 +13,17 @@
 
   <div class="my-5">
     <%= form.label :student_id %>
-    <%= form.text_field :student_id, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": assignment_submission.errors[:student_id].none?, "border-red-400 focus:outline-red-600": assignment_submission.errors[:student_id].any?}] %>
+    <%= form.collection_select :student_id, Student.all, :id, :username %>
   </div>
 
   <div class="my-5">
     <%= form.label :assignment_id %>
     <%= form.text_field :assignment_id, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": assignment_submission.errors[:assignment_id].none?, "border-red-400 focus:outline-red-600": assignment_submission.errors[:assignment_id].any?}] %>
+  </div>
+
+  <div class="field">
+    <%= form.label :file, "Upload File" %><br>
+    <%= form.file_field :file, direct_upload: true %>
   </div>
 
   <div class="my-5">

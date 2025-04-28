@@ -1,0 +1,43 @@
+/*----------------------------------------------------
+  SchoolBridge brand palette + helpers
+  (compiled after tailwind so it can reference utilities)
+----------------------------------------------------*/
+
+@layer utilities {
+  /* brand colours */
+  :root {
+    --sb-gold-700: #6e4200;
+    --sb-gold-600: #8a5604;
+    --sb-gold-500: #b77a07;
+    --sb-gold-400: #dca211;
+    --sb-gold-300: #ffd263;
+
+    --sb-brown-900: #2a1500;
+    --sb-green: #009247;
+  }
+
+  .bg-brand-gradient {
+    @apply bg-gradient-to-b from-[var(--sb-gold-500)] via-[var(--sb-gold-600)] to-[var(--sb-gold-900)];
+  }
+  .text-brand { color: var(--sb-gold-400); }
+
+  /* sidebar icons state */
+  .nav-link   { @apply flex items-center px-6 py-3 text-white/80 hover:text-white; }
+  .nav-link.active { @apply bg-white/10 text-white font-semibold; }
+
+  /* buttons */
+  .btn       { @apply inline-block rounded-lg px-6 py-2.5 font-semibold shadow; }
+  .btn-gold  { @apply btn bg-[var(--sb-gold-400)] hover:bg-[var(--sb-gold-300)] text-white; }
+  .btn-green { @apply btn bg-[var(--sb-green)] hover:bg-green-600 text-white; }
+
+  /* drag-and-drop area */
+  .drop-zone {
+    @apply flex items-center justify-center text-center text-sm text-gray-600
+    border-2 border-dashed border-gray-400/60 rounded-lg h-48 bg-gray-50;
+  }
+  .drop-zone.dragover { @apply border-[var(--sb-gold-400)] bg-white; }
+}
+
+/* scrollbar for sidebar (optional) */
+.sb-scrollbar::-webkit-scrollbar      { width: 4px; }
+.sb-scrollbar::-webkit-scrollbar-thumb{ background: var(--sb-gold-400); border-radius: 2px; }

@@ -22,7 +22,8 @@ class AssignmentSubmissionsController < ApplicationController
   # POST /assignment_submissions or /assignment_submissions.json
   def create
     @assignment_submission = AssignmentSubmission.new(assignment_submission_params)
-
+    @assignment_submission.student = current_person
+    @assignment_submission.date_submitted = Date.current
     respond_to do |format|
       if @assignment_submission.save
         format.html { redirect_to @assignment_submission, notice: "Assignment submission was successfully created." }
@@ -65,6 +66,7 @@ class AssignmentSubmissionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def assignment_submission_params
-      params.expect(assignment_submission: [ :student_id, :assignment_id, :attempt_number, :date_submitted, :grade, :feedback ])
+      params.expect(assignment_submission: [ :assignment_id, :attempt_number, :grade, :feedback ])
+      params.require(:assignment_submission).permit(:assignment_id, :person_id, :file)
     end
 end
