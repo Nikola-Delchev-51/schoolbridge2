@@ -1,6 +1,4 @@
-<!-- app/views/assignment_submissions/_assignment_submission.html.erb -->
 <div class="flex-1 space-y-1">
-  <!-- Link out to the assignment (we only have a description field in the UML) -->
   <h3 class="text-xl font-semibold text-[#2a1500] hover:underline">
     <%= link_to(
           assignment_submission.assignment.description.truncate(40),
@@ -8,7 +6,6 @@
         ) %>
   </h3>
 
-  <!-- Show the subject and class grade -->
   <p class="text-gray-500 text-sm">
     <strong>Subject:</strong>
     <%= assignment_submission.assignment.subject.name %>

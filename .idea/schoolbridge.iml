@@ -59,6 +59,7 @@
     <orderEntry type="library" scope="PROVIDED" name="debug (v1.10.0, Remote: ruby-3.4.3-p32) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="devise (v4.9.4, Remote: ruby-3.4.3-p32) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="dotenv (v3.1.8, Remote: ruby-3.4.3-p32) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dotenv-rails (v3.1.8, Remote: ruby-3.4.3-p32) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="drb (v2.2.1, Remote: ruby-3.4.3-p32) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ed25519 (v1.3.0, Remote: ruby-3.4.3-p32) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.13.1, Remote: ruby-3.4.3-p32) [gem]" level="application" />
@@ -95,6 +96,7 @@
     <orderEntry type="library" scope="PROVIDED" name="ostruct (v0.6.1, Remote: ruby-3.4.3-p32) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parallel (v1.27.0, Remote: ruby-3.4.3-p32) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parser (v3.3.8.0, Remote: ruby-3.4.3-p32) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="plagiarism-checker (v3.4.0, Remote: ruby-3.4.3-p32) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pp (v0.6.2, Remote: ruby-3.4.3-p32) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="prettyprint (v0.2.0, Remote: ruby-3.4.3-p32) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="prism (v1.4.0, Remote: ruby-3.4.3-p32) [gem]" level="application" />

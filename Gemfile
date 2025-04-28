@@ -32,6 +32,8 @@ gem "solid_cable"
 
 gem "devise"
 
+gem "plagiarism-checker", "~> 3.4"
+
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
@@ -58,6 +60,10 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+end
+
+group :development do
+  gem "dotenv-rails", "~> 3.0"
 end
 
 group :test do
