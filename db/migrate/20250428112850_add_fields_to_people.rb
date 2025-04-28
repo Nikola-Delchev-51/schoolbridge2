@@ -1,7 +1,7 @@
 class AddFieldsToPeople < ActiveRecord::Migration[8.0]
   def change
     change_table :people, bulk: true do |t|
-      t.string  :username,       null: false
+      t.string  :username
       t.string  :forename
       t.string  :middle_name
       t.string  :surname

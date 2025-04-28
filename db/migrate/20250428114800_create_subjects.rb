@@ -4,8 +4,8 @@ class CreateSubjects < ActiveRecord::Migration[8.0]
       t.string :code, null: false
       t.string :name, null: false
       t.text :description
-      t.references :grade, null: false, foreign_key: true
-      t.references :class_cohort, null: false, foreign_key: true
+      t.references :class_grade, null: false, foreign_key: true
+      t.references :class_cohort, null: true, foreign_key: true
       t.references :teacher, null: false, foreign_key: { to_table: :people }
 
       t.timestamps

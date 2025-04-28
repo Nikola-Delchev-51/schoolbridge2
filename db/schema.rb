@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_28_121750) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_28_150027) do
   create_table "addresses", force: :cascade do |t|
     t.string "building_number"
     t.string "street", null: false
@@ -70,12 +70,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_28_121750) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "class_cohort_id"
-    t.date "enrollment_date"
-    t.date "employment_commencement_date"
-    t.float "salary"
-    t.integer "student_id"
-    t.string "username", null: false
+    t.string "username"
     t.string "forename"
     t.string "middle_name"
     t.string "surname"
@@ -83,6 +78,11 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_28_121750) do
     t.date "date_of_birth"
     t.integer "address_id"
     t.string "password_digest"
+    t.integer "class_cohort_id"
+    t.date "enrollment_date"
+    t.date "employment_commencement_date"
+    t.float "salary"
+    t.integer "student_id"
     t.index ["address_id"], name: "index_people_on_address_id"
     t.index ["class_cohort_id"], name: "index_people_on_class_cohort_id"
     t.index ["email"], name: "index_people_on_email", unique: true
@@ -105,14 +105,14 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_28_121750) do
     t.string "code", null: false
     t.string "name", null: false
     t.text "description"
-    t.integer "grade_id", null: false
-    t.integer "class_cohort_id", null: false
+    t.integer "class_grade_id", null: false
+    t.integer "class_cohort_id"
     t.integer "teacher_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["class_cohort_id"], name: "index_subjects_on_class_cohort_id"
+    t.index ["class_grade_id"], name: "index_subjects_on_class_grade_id"
     t.index ["code"], name: "index_subjects_on_code", unique: true
-    t.index ["grade_id"], name: "index_subjects_on_grade_id"
     t.index ["teacher_id"], name: "index_subjects_on_teacher_id"
   end
 
@@ -127,6 +127,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_28_121750) do
   add_foreign_key "people", "people", column: "student_id"
   add_foreign_key "plagiarism_reports", "assignment_submissions"
   add_foreign_key "subjects", "class_cohorts"
-  add_foreign_key "subjects", "grades"
+  add_foreign_key "subjects", "class_grades"
   add_foreign_key "subjects", "people", column: "teacher_id"
 end
