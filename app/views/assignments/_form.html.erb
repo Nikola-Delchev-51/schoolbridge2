@@ -1,0 +1,37 @@
+<%= form_with(model: assignment, class: "contents") do |form| %>
+  <% if assignment.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-md mt-3">
+      <h2><%= pluralize(assignment.errors.count, "error") %> prohibited this assignment from being saved:</h2>
+
+      <ul class="list-disc ml-6">
+        <% assignment.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :subject_id %>
+    <%= form.text_field :subject_id, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": assignment.errors[:subject_id].none?, "border-red-400 focus:outline-red-600": assignment.errors[:subject_id].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :class_grade_id %>
+    <%= form.text_field :class_grade_id, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": assignment.errors[:class_grade_id].none?, "border-red-400 focus:outline-red-600": assignment.errors[:class_grade_id].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :date_due %>
+    <%= form.date_field :date_due, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": assignment.errors[:date_due].none?, "border-red-400 focus:outline-red-600": assignment.errors[:date_due].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :description %>
+    <%= form.textarea :description, rows: 4, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": assignment.errors[:description].none?, "border-red-400 focus:outline-red-600": assignment.errors[:description].any?}] %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit class: "w-full sm:w-auto rounded-md px-3.5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>

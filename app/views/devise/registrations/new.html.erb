@@ -1,0 +1,117 @@
+<h2>Sign up</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+    <!-- Username -->
+    <div>
+      <%= f.label :username %><br>
+      <%= f.text_field :username, autofocus: true, autocomplete: "username" %>
+    </div>
+
+    <!-- Name parts -->
+    <div class="grid grid-cols-3 gap-2">
+      <div><%= f.label :forename %><br><%= f.text_field :forename %></div>
+      <div><%= f.label :middle_name %><br><%= f.text_field :middle_name %></div>
+      <div><%= f.label :surname %><br><%= f.text_field :surname %></div>
+    </div>
+
+    <!-- Date of birth -->
+    <div>
+      <%= f.label :date_of_birth %><br>
+      <%= f.date_field :date_of_birth %>
+    </div>
+
+    <!-- STI type selector -->
+    <div>
+      <%= f.label :type, "Account type" %><br>
+      <%= f.select :type, [["Student", "Student"],
+                           ["Teacher", "Teacher"],
+                           ["Parent",  "Parent"]], prompt: "Choose…" %>
+    </div>
+
+  <!-- Address section -->
+  <fieldset class="border p-4 mb-4">
+    <legend class="font-semibold">Address</legend>
+
+    <%= f.fields_for :address do |af| %>
+      <div class="grid grid-cols-3 gap-2">
+        <div>
+          <%= af.label :building_number %><br>
+          <%= af.text_field :building_number %>
+        </div>
+        <div>
+          <%= af.label :street %><br>
+          <%= af.text_field :street %>
+        </div>
+        <div>
+          <%= af.label :postcode %><br>
+          <%= af.text_field :postcode %>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-2 mt-2">
+        <div>
+          <%= af.label :city %><br>
+          <%= af.text_field :city %>
+        </div>
+        <div>
+          <%= af.label :country %><br>
+          <%= af.text_field :country %>
+        </div>
+      </div>
+    <% end %>
+  </fieldset>
+
+    <!-- Student-specific (class & enrollment) -->
+    <div>
+      <%= f.label :class_cohort_id, "Class cohort (students only)" %><br>
+      <%= f.collection_select :class_cohort_id, ClassCohort.all, :id, :name, include_blank: true %>
+    </div>
+
+    <div>
+      <%= f.label :enrollment_date, "Enrollment date (students only)" %><br>
+      <%= f.date_field :enrollment_date %>
+    </div>
+
+    <!-- Teacher-specific -->
+    <div>
+      <%= f.label :employment_commencement_date, "Start date (teachers only)" %><br>
+      <%= f.date_field :employment_commencement_date %>
+    </div>
+
+    <div>
+      <%= f.label :salary, "Salary (teachers only)" %><br>
+      <%= f.number_field :salary, step: 0.01 %>
+    </div>
+
+    <!-- Parent-specific (student link) -->
+    <div>
+      <%= f.label :student_id, "Your child (parents only)" %><br>
+      <%= f.collection_select :student_id, Student.all, :id, :username, include_blank: true %>
+    </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>

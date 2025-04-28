@@ -1,0 +1,26 @@
+<div id="<%= dom_id assignment_submission %>" class="w-full sm:w-auto my-5 space-y-5">
+  <div>
+    <strong class="block font-medium mb-1">Student:</strong>
+    <%= assignment_submission.student_id %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Assignment:</strong>
+    <%= assignment_submission.assignment_id %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Attempt number:</strong>
+    <%= assignment_submission.attempt_number %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Date submitted:</strong>
+    <%= assignment_submission.date_submitted %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Grade:</strong>
+    <%= assignment_submission.grade %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Feedback:</strong>
+    <%= assignment_submission.feedback %>
+  </div>
+</div>
