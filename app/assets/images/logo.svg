@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 444.98 444.98">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#New_Gradient_Swatch);
+        filter: url(#drop-shadow-4);
+      }
+
+      .cls-2 {
+        mask: url(#mask-5);
+      }
+
+      .cls-3 {
+        fill: url(#New_Gradient_Swatch_4);
+        filter: url(#drop-shadow-5);
+      }
+
+      .cls-4 {
+        mask: url(#mask-1);
+      }
+
+      .cls-5 {
+        filter: url(#luminosity-invert-3);
+      }
+
+      .cls-6 {
+        mask: url(#mask-6);
+      }
+
+      .cls-7 {
+        mask: url(#mask-7);
+      }
+
+      .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-9 {
+        opacity: .3;
+      }
+
+      .cls-10 {
+        mask: url(#mask);
+      }
+
+      .cls-11 {
+        opacity: .4;
+      }
+
+      .cls-11, .cls-12 {
+        mix-blend-mode: screen;
+      }
+
+      .cls-13 {
+        fill: url(#New_Gradient_Swatch_5-2);
+        filter: url(#drop-shadow-3);
+      }
+
+      .cls-14 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-15 {
+        filter: url(#luminosity-invert-6);
+      }
+
+      .cls-16 {
+        filter: url(#drop-shadow-7);
+      }
+
+      .cls-17 {
+        mask: url(#mask-8);
+      }
+
+      .cls-18 {
+        mask: url(#mask-2);
+      }
+
+      .cls-19 {
+        stroke: #fff;
+      }
+
+      .cls-19, .cls-20 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+
+      .cls-21 {
+        mask: url(#mask-9);
+      }
+
+      .cls-22 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-23 {
+        filter: url(#luminosity-invert-4);
+      }
+
+      .cls-24 {
+        fill: url(#linear-gradient-10);
+        filter: url(#drop-shadow-9);
+      }
+
+      .cls-25 {
+        isolation: isolate;
+      }
+
+      .cls-26 {
+        filter: url(#luminosity-invert-9);
+      }
+
+      .cls-27 {
+        fill: url(#linear-gradient-8);
+      }
+
+      .cls-28 {
+        filter: url(#luminosity-invert-7);
+      }
+
+      .cls-29 {
+        filter: url(#luminosity-invert-10);
+      }
+
+      .cls-30 {
+        opacity: .66;
+      }
+
+      .cls-31 {
+        fill: url(#linear-gradient-7);
+      }
+
+      .cls-20 {
+        stroke: url(#linear-gradient-2);
+      }
+
+      .cls-32 {
+        fill: url(#linear-gradient-9);
+      }
+
+      .cls-33 {
+        fill: url(#linear-gradient-11);
+      }
+
+      .cls-34 {
+        fill: url(#New_Gradient_Swatch_6);
+      }
+
+      .cls-35 {
+        fill: url(#linear-gradient-6);
+      }
+
+      .cls-36 {
+        fill: url(#New_Gradient_Swatch_5);
+        filter: url(#drop-shadow-2);
+      }
+
+      .cls-37 {
+        fill: url(#New_Gradient_Swatch_2);
+        filter: url(#drop-shadow-6);
+      }
+
+      .cls-38 {
+        filter: url(#luminosity-invert-8);
+      }
+
+      .cls-39 {
+        mask: url(#mask-4);
+      }
+
+      .cls-40 {
+        filter: url(#luminosity-invert-2);
+      }
+
+      .cls-41 {
+        filter: url(#luminosity-invert);
+      }
+
+      .cls-12 {
+        opacity: .6;
+      }
+
+      .cls-42 {
+        fill: url(#New_Gradient_Swatch_8);
+      }
+
+      .cls-43 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-44 {
+        filter: url(#luminosity-invert-5);
+      }
+
+      .cls-45 {
+        fill: url(#linear-gradient-3);
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-46 {
+        mask: url(#mask-3);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="222.49" y1="-.71" x2="222.49" y2="432.27" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8a5336"/>
+      <stop offset="1" stop-color="#572d0a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="222.49" y1="0" x2="222.49" y2="444.98" gradientUnits="userSpaceOnUse">
+      <stop offset=".28" stop-color="#fff"/>
+      <stop offset="1" stop-color="#bcbec0"/>
+    </linearGradient>
+    <filter id="luminosity-invert" x="-2.08" y="-2.05" width="449.28" height="449.04" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask" x="-2.08" y="-2.05" width="449.28" height="449.04" maskUnits="userSpaceOnUse">
+      <g class="cls-41">
+        <image width="1872" height="1871" transform="translate(-2.08 -2.05) scale(.24)" xlink:href="Logo2-1.png"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient-3" x1="137.04" y1="79.33" x2="310.25" y2="179.33" gradientUnits="userSpaceOnUse">
+      <stop offset=".21" stop-color="#f7943e"/>
+      <stop offset=".71" stop-color="#e56d1f"/>
+    </linearGradient>
+    <filter id="drop-shadow-1" x="93.32" y="96.71" width="257.28" height="59.28" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="5"/>
+      <feFlood flood-color="#231f20" flood-opacity=".75"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="New_Gradient_Swatch_5" data-name="New Gradient Swatch 5" x1="221.89" y1="306.64" x2="221.89" y2="326.67" gradientUnits="userSpaceOnUse">
+      <stop offset=".01" stop-color="#f7941d"/>
+      <stop offset="1" stop-color="#bf6d21"/>
+    </linearGradient>
+    <filter id="drop-shadow-2" x="59.96" y="291.59" width="323.76" height="50.16" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-2" stdDeviation="5"/>
+      <feFlood flood-color="#000" flood-opacity=".39"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="New_Gradient_Swatch_5-2" data-name="New Gradient Swatch 5" x1="222.49" y1="279.22" x2="222.49" y2="299.25" xlink:href="#New_Gradient_Swatch_5"/>
+    <filter id="drop-shadow-3" x="82.28" y="263.99" width="280.32" height="50.4" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-3" stdDeviation="5"/>
+      <feFlood flood-color="#000" flood-opacity=".39"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="New_Gradient_Swatch" data-name="New Gradient Swatch" x1="221.89" y1="93.55" x2="221.89" y2="271.83" gradientUnits="userSpaceOnUse">
+      <stop offset=".01" stop-color="#ffc60b"/>
+      <stop offset="1" stop-color="#bf6d21"/>
+    </linearGradient>
+    <filter id="drop-shadow-4" x="93.32" y="78.47" width="257.28" height="208.56" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-4" stdDeviation="5"/>
+      <feFlood flood-color="#231f20" flood-opacity=".75"/>
+      <feComposite in2="blur-4" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="New_Gradient_Swatch_4" data-name="New Gradient Swatch 4" x1="222.49" y1="230.28" x2="222.49" y2="271.83" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#52b955"/>
+      <stop offset="1" stop-color="#006838"/>
+    </linearGradient>
+    <filter id="drop-shadow-5" x="186.68" y="215.27" width="71.76" height="71.76" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-5" stdDeviation="5"/>
+      <feFlood flood-color="#77c14d" flood-opacity=".8"/>
+      <feComposite in2="blur-5" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="New_Gradient_Swatch_2" data-name="New Gradient Swatch 2" x1="222.28" y1="159.91" x2="222.28" y2="118.22" gradientUnits="userSpaceOnUse">
+      <stop offset=".01" stop-color="#bcbec0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <filter id="drop-shadow-6" x="186.2" y="103.19" width="72" height="71.76" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-6" stdDeviation="5"/>
+      <feFlood flood-color="#231f20" flood-opacity=".75"/>
+      <feComposite in2="blur-6" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-4" x1="152.9" y1="150.58" x2="152.9" y2="189.62" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00668d"/>
+      <stop offset=".73" stop-color="#2895b8"/>
+      <stop offset=".98" stop-color="#559dba"/>
+    </linearGradient>
+    <filter id="luminosity-invert-2" x="120.08" y="148.43" width="65.76" height="43.2" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask-1" x="120.08" y="148.43" width="65.76" height="43.2" maskUnits="userSpaceOnUse">
+      <g class="cls-40">
+        <image width="274" height="180" transform="translate(120.08 148.43) scale(.24)" xlink:href="Logo2-2.png"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient-5" x1="152.9" y1="199.8" x2="152.9" y2="238.84" xlink:href="#linear-gradient-4"/>
+    <filter id="luminosity-invert-3" x="120.08" y="197.63" width="65.76" height="43.44" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask-2" x="120.08" y="197.63" width="65.76" height="43.44" maskUnits="userSpaceOnUse">
+      <g class="cls-5">
+        <image width="274" height="181" transform="translate(120.08 197.63) scale(.24)" xlink:href="Logo2-3.png"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient-6" x1="291.23" x2="291.23" xlink:href="#linear-gradient-4"/>
+    <filter id="luminosity-invert-4" x="258.32" y="148.43" width="65.76" height="43.2" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask-3" x="258.32" y="148.43" width="65.76" height="43.2" maskUnits="userSpaceOnUse">
+      <g class="cls-23">
+        <image width="274" height="180" transform="translate(258.32 148.43) scale(.24)" xlink:href="Logo2-4.png"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient-7" x1="291.23" y1="199.8" x2="291.23" y2="238.84" xlink:href="#linear-gradient-4"/>
+    <filter id="luminosity-invert-5" x="258.32" y="197.63" width="65.76" height="43.44" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask-4" x="258.32" y="197.63" width="65.76" height="43.44" maskUnits="userSpaceOnUse">
+      <g class="cls-44">
+        <image width="274" height="181" transform="translate(258.32 197.63) scale(.24)" xlink:href="Logo2-5.png"/>
+      </g>
+    </mask>
+    <filter id="drop-shadow-7" x="194.79" y="222.23" width="55.44" height="57.12" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-7" stdDeviation="5"/>
+      <feFlood flood-color="#fff" flood-opacity=".8"/>
+      <feComposite in2="blur-7" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-8" x1="221.89" y1="170.1" x2="221.89" y2="189.82" xlink:href="#linear-gradient-4"/>
+    <filter id="luminosity-invert-6" x="188.96" y="167.87" width="65.76" height="24" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask-5" x="188.96" y="167.87" width="65.76" height="24" maskUnits="userSpaceOnUse">
+      <g class="cls-15">
+        <image width="274" height="100" transform="translate(188.96 167.87) scale(.24)" xlink:href="Logo2-6.png"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient-9" x1="221.89" y1="199.8" x2="221.89" y2="219.51" xlink:href="#linear-gradient-4"/>
+    <filter id="luminosity-invert-7" x="188.96" y="197.63" width="65.76" height="24" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask-6" x="188.96" y="197.63" width="65.76" height="24" maskUnits="userSpaceOnUse">
+      <g class="cls-28">
+        <image width="274" height="100" transform="translate(188.96 197.63) scale(.24)" xlink:href="Logo2-7.png"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient-10" x1="222.28" y1="123.02" x2="222.28" y2="144.3" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ed1c24"/>
+      <stop offset="1" stop-color="#be1e2d"/>
+    </linearGradient>
+    <filter id="drop-shadow-9" x="208.71" y="118.73" width="27.12" height="30" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-8" stdDeviation="1.42"/>
+      <feFlood flood-color="#000" flood-opacity=".3"/>
+      <feComposite in2="blur-8" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-11" x1="247.39" y1="120" x2="247.39" y2="94.37" gradientTransform="translate(74.39 -99.3) rotate(30)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#acd1e3"/>
+      <stop offset=".44" stop-color="#7ab4cd"/>
+      <stop offset="1" stop-color="#45a1c3"/>
+    </linearGradient>
+    <filter id="luminosity-invert-8" x="198.8" y="98.99" width="63.6" height="47.04" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask-7" x="198.8" y="98.99" width="63.6" height="47.04" maskUnits="userSpaceOnUse">
+      <g class="cls-38">
+        <image width="265" height="196" transform="translate(198.8 98.99) scale(.24)" xlink:href="Logo2-9.png"/>
+      </g>
+    </mask>
+    <linearGradient id="New_Gradient_Swatch_6" data-name="New Gradient Swatch 6" x1="246.95" y1="107.61" x2="246.95" y2="71.94" gradientTransform="translate(74.39 -99.3) rotate(30)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5cadce"/>
+      <stop offset=".44" stop-color="#2da4ca"/>
+      <stop offset="1" stop-color="#008bbf"/>
+    </linearGradient>
+    <filter id="luminosity-invert-9" x="189.68" y="76.19" width="95.28" height="66.96" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask-8" x="189.68" y="76.19" width="95.28" height="66.96" maskUnits="userSpaceOnUse">
+      <g class="cls-26">
+        <image width="397" height="279" transform="translate(189.68 76.19) scale(.24)" xlink:href="Logo2-11.png"/>
+      </g>
+    </mask>
+    <linearGradient id="New_Gradient_Swatch_8" data-name="New Gradient Swatch 8" x1="247.42" y1="92.41" x2="247.42" y2="48.04" gradientTransform="translate(74.39 -99.3) rotate(30)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3f7d96"/>
+      <stop offset=".44" stop-color="#1d7e9c"/>
+      <stop offset="1" stop-color="#006a93"/>
+    </linearGradient>
+    <filter id="luminosity-invert-10" x="184.88" y="52.43" width="123.6" height="84.96" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask-9" x="184.88" y="52.43" width="123.6" height="84.96" maskUnits="userSpaceOnUse">
+      <g class="cls-29">
+        <image width="515" height="354" transform="translate(184.88 52.43) scale(.24)" xlink:href="Logo2-13.png"/>
+      </g>
+    </mask>
+  </defs>
+  <g class="cls-25">
+    <g id="Layer_1" data-name="Layer 1">
+      <g>
+        <g>
+          <rect class="cls-43" x="6" y="6" width="432.98" height="432.98" rx="216.49" ry="216.49"/>
+          <rect class="cls-20" x="6" y="6" width="432.98" height="432.98" rx="216.49" ry="216.49"/>
+        </g>
+        <g class="cls-10">
+          <g class="cls-12">
+            <rect class="cls-8" x="6" y="6" width="432.98" height="432.98" rx="216.49" ry="216.49"/>
+            <rect class="cls-19" x="6" y="6" width="432.98" height="432.98" rx="216.49" ry="216.49"/>
+          </g>
+        </g>
+      </g>
+      <path class="cls-45" d="M322.7,111.85H121.26c-2.03,0-3.93,1.33-5,3.51l-6.95,14.13c-2.43,4.95.38,11.35,5,11.35h215.17c4.58,0,7.41-6.32,5.03-11.27l-6.77-14.13c-1.07-2.22-2.98-3.58-5.03-3.58Z"/>
+      <rect class="cls-36" x="75.16" y="306.64" width="293.46" height="20.03" rx="5.65" ry="5.65"/>
+      <rect class="cls-13" x="97.42" y="279.22" width="250.14" height="20.03" rx="5.65" ry="5.65"/>
+      <path class="cls-1" d="M258.26,126.98l-31.78-31.78c-2.2-2.2-5.77-2.2-7.97,0l-31.78,31.78c-1.06,1.06-2.49,1.65-3.98,1.65h-68.7c-3.11,0-5.64,2.52-5.64,5.64v131.92c0,3.11,2.52,5.64,5.64,5.64h215.69c3.11,0,5.64-2.52,5.64-5.64v-131.92c0-3.11-2.52-5.64-5.64-5.64h-67.49c-1.49,0-2.93-.59-3.98-1.65Z"/>
+      <path class="cls-3" d="M207.37,230.28h30.24c3.12,0,5.66,2.53,5.66,5.66v35.89h-41.54v-35.89c0-3.12,2.53-5.65,5.65-5.65Z"/>
+      <circle class="cls-37" cx="222.28" cy="139.07" r="20.84"/>
+      <g>
+        <rect class="cls-14" x="122.11" y="150.58" width="61.58" height="39.04" rx="5.6" ry="5.6"/>
+        <g class="cls-4">
+          <g class="cls-9">
+            <rect x="122.11" y="150.58" width="61.58" height="39.04" rx="5.6" ry="5.6"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect class="cls-22" x="122.11" y="199.8" width="61.58" height="39.04" rx="5.63" ry="5.63"/>
+        <g class="cls-18">
+          <g class="cls-9">
+            <rect x="122.11" y="199.8" width="61.58" height="39.04" rx="5.63" ry="5.63"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect class="cls-35" x="260.44" y="150.58" width="61.58" height="39.04" rx="5.6" ry="5.6"/>
+        <g class="cls-46">
+          <g class="cls-9">
+            <rect x="260.44" y="150.58" width="61.58" height="39.04" rx="5.6" ry="5.6"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect class="cls-31" x="260.44" y="199.8" width="61.58" height="39.04" rx="5.6" ry="5.6"/>
+        <g class="cls-39">
+          <g class="cls-9">
+            <rect x="260.44" y="199.8" width="61.58" height="39.04" rx="5.6" ry="5.6"/>
+          </g>
+        </g>
+      </g>
+      <image class="cls-16" width="512" height="512" transform="translate(208.88 237.45) scale(.05)" xlink:href="../../Downloads/power.png"/>
+      <g>
+        <rect class="cls-27" x="191.1" y="170.1" width="61.58" height="19.72" rx="5.6" ry="5.6"/>
+        <g class="cls-2">
+          <g class="cls-9">
+            <rect x="191.1" y="170.1" width="61.58" height="19.72" rx="5.6" ry="5.6"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect class="cls-32" x="191.1" y="199.8" width="61.58" height="19.72" rx="5.6" ry="5.6"/>
+        <g class="cls-6">
+          <g class="cls-9">
+            <rect x="191.1" y="199.8" width="61.58" height="19.72" rx="5.6" ry="5.6"/>
+          </g>
+        </g>
+      </g>
+      <path class="cls-24" d="M223.01,140.08l8.12-14.06c.55-.96.22-2.18-.73-2.73h0c-.96-.55-2.18-.23-2.73.73l-7.32,12.68c-.18.3-.43.56-.73.73l-5.44,3.14c-.96.55-1.28,1.78-.73,2.73h0c.55.96,1.78,1.28,2.73.73l6.83-3.95h0s0,0,0,0h0s0,0,0,0Z"/>
+      <g>
+        <g>
+          <image class="cls-30" width="390" height="321" transform="translate(183.72 83.9) scale(.24)" xlink:href="Logo2-8.png"/>
+          <g>
+            <path class="cls-33" d="M241.36,106.07c-12.53-7.24-27.49-6.45-38.95.74-1.2.75-1.76,2.21-1.39,3.58h0c.57,2.12,3.02,3.03,4.88,1.88,9.39-5.82,21.6-6.42,31.84-.51,10.5,6.06,16.11,17.35,15.43,28.68-.13,2.19,1.94,3.86,4.06,3.29l.53-.14c1.36-.36,2.33-1.56,2.4-2.96.68-13.68-6.14-27.24-18.81-34.56Z"/>
+            <g class="cls-7">
+              <g class="cls-11">
+                <path class="cls-8" d="M241.36,106.07c-12.53-7.24-27.49-6.45-38.95.74-1.2.75-1.76,2.21-1.39,3.58h0c.57,2.12,3.02,3.03,4.88,1.88,9.39-5.82,21.6-6.42,31.84-.51,10.5,6.06,16.11,17.35,15.43,28.68-.13,2.19,1.94,3.86,4.06,3.29l.53-.14c1.36-.36,2.33-1.56,2.4-2.96.68-13.68-6.14-27.24-18.81-34.56Z"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g>
+          <image class="cls-30" width="522" height="405" transform="translate(174.84 61.1) scale(.24)" xlink:href="Logo2-10.png"/>
+          <g>
+            <path class="cls-34" d="M252.29,86.48c-18.3-10.57-39.77-10.67-57.49-2.16-2.27,1.09-3.41,3.69-2.76,6.13h0c.85,3.18,4.38,4.85,7.36,3.44,14.5-6.87,32.03-6.74,46.98,1.89,15.14,8.74,24.05,24.13,25.17,40.35.23,3.31,3.45,5.58,6.66,4.72l.77-.21c2.44-.65,4.12-2.93,3.93-5.45-1.49-19.59-12.32-38.14-30.62-48.7Z"/>
+            <g class="cls-17">
+              <g class="cls-11">
+                <path class="cls-8" d="M252.29,86.48c-18.3-10.57-39.77-10.67-57.49-2.16-2.27,1.09-3.41,3.69-2.76,6.13h0c.85,3.18,4.38,4.85,7.36,3.44,14.5-6.87,32.03-6.74,46.98,1.89,15.14,8.74,24.05,24.13,25.17,40.35.23,3.31,3.45,5.58,6.66,4.72l.77-.21c2.44-.65,4.12-2.93,3.93-5.45-1.49-19.59-12.32-38.14-30.62-48.7Z"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g>
+          <image class="cls-30" width="640" height="480" transform="translate(169.8 37.34) scale(.24)" xlink:href="Logo2-12.png"/>
+          <g>
+            <path class="cls-42" d="M264.52,65.94c-23.05-13.31-49.72-14.66-72.83-5.98-3.54,1.33-5.48,5.16-4.5,8.82h0c1.12,4.18,5.58,6.52,9.64,5.02,18.91-6.99,40.67-5.83,59.49,5.03,19.21,11.09,31.2,29.9,34.3,50.24.66,4.33,4.96,7.1,9.19,5.97l.98-.26c3.64-.98,5.99-4.55,5.39-8.27-3.93-24.54-18.47-47.17-41.67-60.57Z"/>
+            <g class="cls-21">
+              <g class="cls-11">
+                <path class="cls-8" d="M264.52,65.94c-23.05-13.31-49.72-14.66-72.83-5.98-3.54,1.33-5.48,5.16-4.5,8.82h0c1.12,4.18,5.58,6.52,9.64,5.02,18.91-6.99,40.67-5.83,59.49,5.03,19.21,11.09,31.2,29.9,34.3,50.24.66,4.33,4.96,7.1,9.19,5.97l.98-.26c3.64-.98,5.99-4.55,5.39-8.27-3.93-24.54-18.47-47.17-41.67-60.57Z"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

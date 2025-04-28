@@ -1,9 +1,54 @@
-<% content_for :title, "New assignment submission" %>
+<%# app/views/assignment_submissions/new.html.erb %>
+<% content_for :title, "New Assignment Submission" %>
 
-<div class="md:w-2/3 w-full">
-  <h1 class="font-bold text-4xl">New assignment submission</h1>
+<section class="max-w-3xl mx-auto py-8">
+  <h1 class="text-3xl font-bold mb-6">New Assignment Submission</h1>
 
-  <%= render "form", assignment_submission: @assignment_submission %>
+  <%= form_with(model: @assignment_submission, local: true, multipart: true, class: "space-y-6") do |f| %>
+    <% if @assignment_submission.errors.any? %>
+      <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded-lg">
+        <h2 class="font-semibold text-red-700 mb-2">
+          <%= pluralize(@assignment_submission.errors.count, "error") %> prevented saving:
+        </h2>
+        <ul class="list-disc pl-5 text-sm text-red-600 space-y-1">
+          <% @assignment_submission.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
 
-  <%= link_to "Back to assignment submissions", assignment_submissions_path, class: "w-full sm:w-auto text-center mt-2 sm:mt-0 sm:ml-2 rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>
-</div>
+    <div>
+      <%= f.label :assignment_id, "Assignment", class: "block font-medium" %>
+      <%= f.collection_select :assignment_id,
+                              Assignment.all,
+                              :id,
+                              :description,
+                              prompt: "Select assignment",
+                              class: "mt-2 block w-full rounded-md border-gray-300 focus:border-[#b77a07]" %>
+    </div>
+
+    <div class="drop-zone relative">
+      <%= f.file_field :file,
+                       direct_upload: true,
+                       class: "absolute inset-0 w-full h-full opacity-0 cursor-pointer" %>
+      <div class="flex flex-col items-center justify-center h-full text-gray-600">
+        <p>Drag &amp; drop file here or click to upload<br>(.pdf, .docx, .txt)</p>
+      </div>
+    </div>
+
+    <div>
+      <%= f.label :date_submitted, "Date Submitted", class: "block font-medium" %>
+      <%= f.date_field :date_submitted,
+                       class: "mt-2 block w-full rounded-md border-gray-300 focus:border-[#b77a07]" %>
+    </div>
+
+    <div>
+      <%= f.submit "Submit", class: "btn-submit" %>
+    </div>
+  <% end %>
+
+  <%= link_to "Back to submissions",
+              assignment_submissions_path,
+              class: "inline-block mt-6 text-[#b77a07] hover:underline" %>
+</section>

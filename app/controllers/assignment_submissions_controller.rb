@@ -4,6 +4,7 @@ class AssignmentSubmissionsController < ApplicationController
   # GET /assignment_submissions or /assignment_submissions.json
   def index
     @assignment_submissions = AssignmentSubmission.all
+    @subjects = Subject.order(:name)
   end
 
   # GET /assignment_submissions/1 or /assignment_submissions/1.json

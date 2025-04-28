@@ -1,29 +1,109 @@
-<% content_for :title, "Assignment submissions" %>
+<% content_for :title, "Assignment Submissions" %>
 
-<div class="w-full">
+<div class="w-full px-6 py-4 space-y-6">
   <% if notice.present? %>
-    <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-md inline-block" id="notice"><%= notice %></p>
+    <p id="notice"
+       class="inline-block bg-green-50 text-green-600 px-4 py-2 rounded-md font-medium">
+      <%= notice %>
+    </p>
   <% end %>
 
-  <div class="flex justify-between items-center">
-    <h1 class="font-bold text-4xl">Assignment submissions</h1>
-    <%= link_to "New assignment submission", new_assignment_submission_path, class: "rounded-md px-3.5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white block font-medium" %>
+  <!-- Header: title, filters, search, new button -->
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+      <h1 class="font-bold text-4xl text-[#6e4200]">Assignment Submissions</h1>
+
+      <!-- Subject filter -->
+      <%= form_with url: assignment_submissions_path, method: :get, local: true, class: "inline-block" do %>
+        <%= select_tag :subject_id,
+                       options_for_select([["All Subjects", ""]] + @subjects.map { |s| [s.name, s.id] }, params[:subject_id]),
+                       class: "block w-48 px-3 py-2 bg-white border border-gray-300 rounded-lg shadow-sm
+                   text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ffd263]" %>
+      <% end %>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <!-- Search -->
+      <%= form_with url: assignment_submissions_path, method: :get, local: true do %>
+        <%= text_field_tag :q,
+                           params[:q],
+                           placeholder: "Search submissions…",
+                           class: "px-4 py-2 w-64 bg-white border border-gray-300 rounded-lg shadow-sm
+                   text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ffd263]" %>
+      <% end %>
+
+      <!-- New button -->
+      <%= link_to "New Submission",
+                  new_assignment_submission_path,
+                  class: "px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-medium" %>
+    </div>
   </div>
 
-  <div id="assignment_submissions" class="min-w-full divide-y divide-gray-200 space-y-5">
-    <% if @assignment_submissions.any? %>
-      <% @assignment_submissions.each do |assignment_submission| %>
-        <div class="flex flex-col sm:flex-row justify-between items-center pb-5 sm:pb-0">
-          <%= render assignment_submission %>
-          <div class="w-full sm:w-auto flex flex-col sm:flex-row space-x-2 space-y-2">
-            <%= link_to "Show", assignment_submission, class: "w-full sm:w-auto text-center rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>
-            <%= link_to "Edit", edit_assignment_submission_path(assignment_submission), class: "w-full sm:w-auto text-center rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>
-            <%= button_to "Destroy", assignment_submission, method: :delete, class: "w-full sm:w-auto rounded-md px-3.5 py-2.5 text-white bg-red-600 hover:bg-red-500 font-medium cursor-pointer", data: { turbo_confirm: "Are you sure?" } %>
-          </div>
-        </div>
+  <!-- The Table -->
+  <div class="overflow-x-auto bg-white rounded-lg shadow-sm">
+    <table class="min-w-full divide-y divide-gray-200">
+      <thead class="bg-gray-50">
+      <tr>
+        <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700">Assignment</th>
+        <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700">Student</th>
+        <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700">Due Date</th>
+        <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700">Similarity</th>
+        <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700">Actions</th>
+      </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+      <% if @assignment_submissions.any? %>
+        <% @assignment_submissions.each do |sub| %>
+          <tr class="hover:bg-gray-50">
+            <!-- Assignment cell -->
+            <td class="px-6 py-4 whitespace-nowrap">
+              <%= link_to sub.assignment.description.truncate(50),
+                          assignment_path(sub.assignment),
+                          class: "text-blue-600 hover:underline font-medium" %><br>
+              <span class="text-gray-500 text-sm"><%= sub.assignment.subject.name %></span>
+            </td>
+
+            <!-- Student cell -->
+            <td class="px-6 py-4 whitespace-nowrap">
+              <%= "#{sub.student.forename} #{sub.student.surname}" %>
+            </td>
+
+            <!-- Due Date cell -->
+            <td class="px-6 py-4 whitespace-nowrap">
+              <%= sub.assignment.date_due.strftime("%d/%m/%Y") %>
+            </td>
+
+            <!-- Similarity cell -->
+            <td class="px-6 py-4 whitespace-nowrap">
+              <% if sub.plagiarism_report %>
+                <% score = sub.plagiarism_report.similarity_score.to_i %>
+                <span class="<%= score > 15 ? 'text-red-600' : 'text-gray-700' %> font-medium">
+                  <%= "#{score}%" %>
+                </span>
+              <% else %>
+                <span class="text-gray-400">–</span>
+              <% end %>
+            </td>
+
+            <!-- Actions cell -->
+            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+              <%= link_to "Show", sub, class: "text-indigo-600 hover:underline mr-4" %>
+              <%= link_to "Edit", edit_assignment_submission_path(sub), class: "text-indigo-600 hover:underline mr-4" %>
+              <%= button_to "Destroy", sub,
+                            method: :delete,
+                            data: { turbo_confirm: "Are you sure?" },
+                            class: "text-red-600 hover:underline bg-transparent p-0" %>
+            </td>
+          </tr>
+        <% end %>
+      <% else %>
+        <tr>
+          <td colspan="5" class="px-6 py-8 text-center text-gray-500">
+            No assignment submissions found.
+          </td>
+        </tr>
       <% end %>
-    <% else %>
-      <p class="text-center my-10">No assignment submissions found.</p>
-    <% end %>
+      </tbody>
+    </table>
   </div>
 </div>

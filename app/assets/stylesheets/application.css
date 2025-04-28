@@ -10,3 +10,14 @@
  */
 
 @import "schoolbridge.scss";
+
+/*
+ *= require custom
+ *= require_tree .
+ *= require_self
+ */
+
+.devise-page,
+.devise-page * {
+    font-family: "Bahnschrift", sans-serif !important;
+}

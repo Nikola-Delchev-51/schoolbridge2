@@ -5,6 +5,13 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_person!
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+  layout :choose_layout
+
+  private
+  def choose_layout
+    devise_controller? ? "devise" : "application"
+  end
+
   protected
   def configure_permitted_parameters
     added = %i[

@@ -1,26 +1,55 @@
-<div id="<%= dom_id assignment_submission %>" class="w-full sm:w-auto my-5 space-y-5">
-  <div>
-    <strong class="block font-medium mb-1">Student:</strong>
-    <%= assignment_submission.student_id %>
-  </div>
-  <div>
-    <strong class="block font-medium mb-1">Assignment:</strong>
-    <%= assignment_submission.assignment_id %>
-  </div>
-  <div>
-    <strong class="block font-medium mb-1">Attempt number:</strong>
-    <%= assignment_submission.attempt_number %>
-  </div>
-  <div>
-    <strong class="block font-medium mb-1">Date submitted:</strong>
-    <%= assignment_submission.date_submitted %>
-  </div>
-  <div>
-    <strong class="block font-medium mb-1">Grade:</strong>
-    <%= assignment_submission.grade %>
-  </div>
-  <div>
-    <strong class="block font-medium mb-1">Feedback:</strong>
-    <%= assignment_submission.feedback %>
-  </div>
+<!-- app/views/assignment_submissions/_assignment_submission.html.erb -->
+<div class="flex-1 space-y-1">
+  <!-- Link out to the assignment (we only have a description field in the UML) -->
+  <h3 class="text-xl font-semibold text-[#2a1500] hover:underline">
+    <%= link_to(
+          assignment_submission.assignment.description.truncate(40),
+          assignment_path(assignment_submission.assignment)
+        ) %>
+  </h3>
+
+  <!-- Show the subject and class grade -->
+  <p class="text-gray-500 text-sm">
+    <strong>Subject:</strong>
+    <%= assignment_submission.assignment.subject.name %>
+    |
+    <strong>Grade:</strong>
+    <%= assignment_submission.assignment.class_grade.grade %>
+  </p>
+
+  <!-- Student who submitted -->
+  <p class="text-gray-700 text-sm">
+    <strong>Student:</strong>
+    <%= assignment_submission.student.forename %>
+    <%= assignment_submission.student.surname %>
+  </p>
+
+  <!-- When they submitted vs due date -->
+  <p class="text-gray-700 text-sm">
+    <strong>Submitted:</strong>
+    <%= assignment_submission.date_submitted&.strftime("%d/%m/%Y") || "-" %>
+    |
+    <strong>Due:</strong>
+    <%= assignment_submission.assignment.date_due.strftime("%d/%m/%Y") %>
+  </p>
+
+  <!-- Their grade -->
+  <p class="text-gray-700 text-sm">
+    <strong>Grade:</strong>
+    <%= assignment_submission.grade.present? ? number_with_precision(assignment_submission.grade, precision: 1) : "-" %>
+  </p>
+
+  <!-- Similarity score -->
+  <p class="text-gray-700 text-sm">
+    <strong>Similarity:</strong>
+    <% if assignment_submission.plagiarism_report %>
+      <% score = assignment_submission.plagiarism_report.similarity_score.to_i %>
+      <span class="<%= score > 15 ? 'text-red-600' : 'text-gray-700' %>">
+        <%= "#{score}%" %>
+      </span>
+    <% else %>
+      -
+    <% end %>
+  </p>
 </div>
+

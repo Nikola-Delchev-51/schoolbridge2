@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :people, controllers: { registrations: "people/registrations" }
-  resources :people
+  resources :people, except: [:show]
   resources :plagiarism_reports
   resources :assignment_submissions
   resources :assignments
@@ -19,5 +19,5 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
-  # root "dashboard#index"
+  root "assignments#index"
 end
