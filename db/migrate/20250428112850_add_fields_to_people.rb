@@ -5,10 +5,10 @@ class AddFieldsToPeople < ActiveRecord::Migration[8.0]
       t.string  :forename
       t.string  :middle_name
       t.string  :surname
-      t.string  :type                         # STI column
+      t.string  :type
       t.date    :date_of_birth
       t.references :address, foreign_key: true
-      t.string :password_digest             # per UML, even if Devise uses encrypted_password
+      t.string :password_digest
     end
 
     add_index :people, :username, unique: true

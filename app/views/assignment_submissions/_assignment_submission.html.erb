@@ -14,14 +14,12 @@
     <%= assignment_submission.assignment.class_grade.grade %>
   </p>
 
-  <!-- Student who submitted -->
   <p class="text-gray-700 text-sm">
     <strong>Student:</strong>
     <%= assignment_submission.student.forename %>
     <%= assignment_submission.student.surname %>
   </p>
 
-  <!-- When they submitted vs due date -->
   <p class="text-gray-700 text-sm">
     <strong>Submitted:</strong>
     <%= assignment_submission.date_submitted&.strftime("%d/%m/%Y") || "-" %>
@@ -30,13 +28,11 @@
     <%= assignment_submission.assignment.date_due.strftime("%d/%m/%Y") %>
   </p>
 
-  <!-- Their grade -->
   <p class="text-gray-700 text-sm">
     <strong>Grade:</strong>
     <%= assignment_submission.grade.present? ? number_with_precision(assignment_submission.grade, precision: 1) : "-" %>
   </p>
 
-  <!-- Similarity score -->
   <p class="text-gray-700 text-sm">
     <strong>Similarity:</strong>
     <% if assignment_submission.plagiarism_report %>

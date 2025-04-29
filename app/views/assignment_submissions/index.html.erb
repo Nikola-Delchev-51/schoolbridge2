@@ -8,12 +8,10 @@
     </p>
   <% end %>
 
-  <!-- Header: title, filters, search, new button -->
   <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
     <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
       <h1 class="font-bold text-4xl text-[#6e4200]">Assignment Submissions</h1>
 
-      <!-- Subject filter -->
       <%= form_with url: assignment_submissions_path, method: :get, local: true, class: "inline-block" do %>
         <%= select_tag :subject_id,
                        options_for_select([["All Subjects", ""]] + @subjects.map { |s| [s.name, s.id] }, params[:subject_id]),
@@ -23,7 +21,6 @@
     </div>
 
     <div class="flex items-center gap-4">
-      <!-- Search -->
       <%= form_with url: assignment_submissions_path, method: :get, local: true do %>
         <%= text_field_tag :q,
                            params[:q],
@@ -32,14 +29,12 @@
                    text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ffd263]" %>
       <% end %>
 
-      <!-- New button -->
       <%= link_to "New Submission",
                   new_assignment_submission_path,
                   class: "px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-medium" %>
     </div>
   </div>
 
-  <!-- The Table -->
   <div class="overflow-x-auto bg-white rounded-lg shadow-sm">
     <table class="min-w-full divide-y divide-gray-200">
       <thead class="bg-gray-50">
@@ -55,7 +50,6 @@
       <% if @assignment_submissions.any? %>
         <% @assignment_submissions.each do |sub| %>
           <tr class="hover:bg-gray-50">
-            <!-- Assignment cell -->
             <td class="px-6 py-4 whitespace-nowrap">
               <%= link_to sub.assignment.description.truncate(50),
                           assignment_path(sub.assignment),
@@ -63,17 +57,14 @@
               <span class="text-gray-500 text-sm"><%= sub.assignment.subject.name %></span>
             </td>
 
-            <!-- Student cell -->
             <td class="px-6 py-4 whitespace-nowrap">
               <%= "#{sub.student.forename} #{sub.student.surname}" %>
             </td>
 
-            <!-- Due Date cell -->
             <td class="px-6 py-4 whitespace-nowrap">
               <%= sub.assignment.date_due.strftime("%d/%m/%Y") %>
             </td>
 
-            <!-- Similarity cell -->
             <td class="px-6 py-4 whitespace-nowrap">
               <% if sub.plagiarism_report %>
                 <% score = sub.plagiarism_report.similarity_score.to_i %>
@@ -85,7 +76,6 @@
               <% end %>
             </td>
 
-            <!-- Actions cell -->
             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
               <%= link_to "Show", sub, class: "text-indigo-600 hover:underline mr-4" %>
               <%= link_to "Edit", edit_assignment_submission_path(sub), class: "text-indigo-600 hover:underline mr-4" %>
