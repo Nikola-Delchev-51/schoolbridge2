@@ -1,11 +1,12 @@
-<!-- app/views/layouts/application.html.erb -->
 <!DOCTYPE html>
 <html>
 <head>
   <title><%= content_for?(:title) ? yield(:title) : "SchoolBridge" %></title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
   <%= stylesheet_link_tag "application", media: "all", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
   <%= stylesheet_link_tag "custom",      media: "all", "data-turbo-track": "reload" %>
   <%= javascript_include_tag "application", defer: true, "data-turbo-track": "reload" %>
 </head>
@@ -13,7 +14,6 @@
 <body>
 <div class="container">
 
-  <%# ─── only show sidebar when NOT in a Devise controller ─── %>
   <% unless devise_controller? %>
     <aside class="sidebar">
       <h2>SchoolBridge</h2>

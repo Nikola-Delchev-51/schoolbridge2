@@ -1,0 +1,10 @@
+default: &default
+  input:  "app/assets/tailwind/application.css"
+  output: "app/assets/builds/tailwind.css"
+  config: "tailwind.config.js"
+
+development:
+  <<: *default
+
+production:
+  <<: *default

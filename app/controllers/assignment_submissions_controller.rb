@@ -1,21 +1,26 @@
 class AssignmentSubmissionsController < ApplicationController
   before_action :set_assignment_submission, only: %i[ show edit update destroy ]
 
+  # GET /assignment_submissions or /assignment_submissions.json
   def index
     @assignment_submissions = AssignmentSubmission.all
     @subjects = Subject.order(:name)
   end
 
+  # GET /assignment_submissions/1 or /assignment_submissions/1.json
   def show
   end
 
+  # GET /assignment_submissions/new
   def new
     @assignment_submission = AssignmentSubmission.new
   end
 
+  # GET /assignment_submissions/1/edit
   def edit
   end
 
+  # POST /assignment_submissions or /assignment_submissions.json
   def create
     @assignment_submission = AssignmentSubmission.new(assignment_submission_params)
     @assignment_submission.student = current_person
@@ -31,6 +36,7 @@ class AssignmentSubmissionsController < ApplicationController
     end
   end
 
+  # PATCH/PUT /assignment_submissions/1 or /assignment_submissions/1.json
   def update
     respond_to do |format|
       if @assignment_submission.update(assignment_submission_params)
@@ -43,7 +49,7 @@ class AssignmentSubmissionsController < ApplicationController
     end
   end
 
-
+  # DELETE /assignment_submissions/1 or /assignment_submissions/1.json
   def destroy
     @assignment_submission.destroy!
 
@@ -54,10 +60,12 @@ class AssignmentSubmissionsController < ApplicationController
   end
 
   private
+    # Use callbacks to share common setup or constraints between actions.
     def set_assignment_submission
       @assignment_submission = AssignmentSubmission.find(params.expect(:id))
     end
 
+    # Only allow a list of trusted parameters through.
     def assignment_submission_params
       params.expect(assignment_submission: [ :assignment_id, :attempt_number, :grade, :feedback ])
       params.require(:assignment_submission).permit(:assignment_id, :person_id, :file)
