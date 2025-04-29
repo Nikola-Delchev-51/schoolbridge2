@@ -11,6 +11,7 @@
       <change afterPath="$PROJECT_DIR$/app/assets/config/manifest.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/config/tailwindcss.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" />
@@ -19,6 +20,17 @@
       <change beforePath="$PROJECT_DIR$/app/assets/tailwind/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/tailwind/application.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/devise.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/devise.html.erb" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/app/controllers/addresses_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/addresses_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/assignment_submissions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/assignment_submissions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/copyleaks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/copyleaks_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/jobs/plagiarism_check_job.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/jobs/plagiarism_check_job.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/assignment_submissions/_assignment_submission.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/assignment_submissions/_assignment_submission.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/assignment_submissions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/assignment_submissions/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20250428112850_add_fields_to_people.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20250428112850_add_fields_to_people.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20250428112919_add_subclass_fields_to_people.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20250428112919_add_subclass_fields_to_people.rb" afterDir="false" />
+>>>>>>> parent of f6412a4 (-)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +170,11 @@
       <workItem from="1745805751237" duration="48620000" />
       <workItem from="1745884199660" duration="7269000" />
       <workItem from="1745907608223" duration="3795000" />
+<<<<<<< HEAD
       <workItem from="1745921064757" duration="6923000" />
+=======
+      <workItem from="1745921064757" duration="1282000" />
+>>>>>>> parent of f6412a4 (-)
     </task>
     <servers />
   </component>
