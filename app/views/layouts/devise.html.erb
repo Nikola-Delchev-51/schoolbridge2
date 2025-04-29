@@ -5,13 +5,11 @@
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
-  <!-- Your main stylesheet, which pulls in custom.css via require_tree -->
   <%= stylesheet_link_tag "application", media: "all", "data-turbo-track": "reload" %>
   <%= javascript_include_tag "application", defer: true, "data-turbo-track": "reload" %>
 </head>
 
 <body class="devise-page">
-<!--  ─── HEADER ───  -->
 <header class="devise-header" style="position:relative; z-index:10;
   display:flex; justify-content:space-between; align-items:center;
   padding:1rem 2rem; background:white;">
@@ -38,14 +36,14 @@
   </nav>
 </header>
 
-<!--  ─── GOLD BACKGROUND ───  -->
+
 <div class="devise-bg" style="
 position:fixed; top:0; left:0; right:0; bottom:0;
   background: linear-gradient(to bottom, #8c3f00 0%, #5e2c00 100%);
   z-index:0;">
 </div>
 
-<!--  ─── CENTERED CARD ───  -->
+
 <div style="
 position:relative; z-index:5;
   display:flex; justify-content:center; align-items:center;
@@ -66,13 +64,10 @@ position:relative; z-index:5;
       color:#6e4200;">
       Sign in
     </h2>
-
-    <!-- render the Devise form here -->
     <%= yield %>
   </div>
 </div>
 
-<!--  ─── FOOTER ───  -->
 <footer style="
 position:fixed; bottom:0; left:0; right:0;
   background:white; text-align:center; padding:1rem;
