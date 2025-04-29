@@ -1,13 +1,18 @@
+# app/controllers/copyleaks_controller.rb
 class CopyleaksController < ApplicationController
+  # Allow external POSTs (Copyleaks) without CSRF token
   skip_before_action :verify_authenticity_token, only: [:webhook]
-  # Allow Copyleaks to call without authentication to the app
+
+  # Allow Copyleaks to call without authentication
   skip_before_action :authenticate_person!, only: :webhook
 
+  # POST /copyleaks/webhook/scan/:scan_id/:status
   def webhook
     scan_id = params[:scan_id]
     status  = params[:status]
     payload = request.raw_post
 
+    # Parse JSON safely
     data = JSON.parse(payload) rescue {}
 
     # Validate developerPayload points to a real submission
@@ -21,10 +26,10 @@ class CopyleaksController < ApplicationController
 
     # Only process completed scans
     if status == "completed"
-      # Try overall match percentage
+      # 1️⃣ Try overall match percentage
       similarity = data.dig("results", "score", "aggregatedScore").to_f
 
-      # If zero, fall back to best per-source score
+      # 2️⃣ If zero, fall back to best per-source score
       if similarity.zero? && data["results"].is_a?(Hash)
         %w[internet database batch repositories].each do |category|
           Array(data["results"][category]).each do |res|
@@ -34,7 +39,7 @@ class CopyleaksController < ApplicationController
         end
       end
 
-      # Gather source URLs
+      # 3️⃣ Gather all source URLs/titles
       sources = []
       if data["results"].is_a?(Hash)
         %w[internet database batch repositories].each do |category|

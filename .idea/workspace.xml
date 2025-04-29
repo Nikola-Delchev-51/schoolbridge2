@@ -7,6 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="50b84593-70f3-4fc7-9e60-d47f12e1c75d" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/app/assets/config/manifest.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/config/tailwindcss.yml" afterDir="false" />
@@ -32,6 +33,9 @@
       <change beforePath="$PROJECT_DIR$/db/migrate/20250428112919_add_subclass_fields_to_people.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20250428112919_add_subclass_fields_to_people.rb" afterDir="false" />
 >>>>>>> parent of f6412a4 (-)
     </list>
+=======
+    <list default="true" id="50b84593-70f3-4fc7-9e60-d47f12e1c75d" name="Changes" comment="" />
+>>>>>>> parent of 980aeb5 (Code Cleanup)
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,6 +172,7 @@
       <option name="presentableId" value="Default" />
       <updated>1745805750037</updated>
       <workItem from="1745805751237" duration="48620000" />
+<<<<<<< HEAD
       <workItem from="1745884199660" duration="7269000" />
       <workItem from="1745907608223" duration="3795000" />
 <<<<<<< HEAD
@@ -175,6 +180,8 @@
 =======
       <workItem from="1745921064757" duration="1282000" />
 >>>>>>> parent of f6412a4 (-)
+=======
+>>>>>>> parent of 980aeb5 (Code Cleanup)
     </task>
     <servers />
   </component>
