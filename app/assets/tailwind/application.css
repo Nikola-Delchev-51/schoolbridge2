@@ -80,6 +80,8 @@
         @apply border-[var(--sb-gold-400)]
         bg-white;
     }
+
+    .hidden { display: none; }
 }
 
 .sb-scrollbar::-webkit-scrollbar {

@@ -21,9 +21,19 @@
     <%= form.text_field :assignment_id, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": assignment_submission.errors[:assignment_id].none?, "border-red-400 focus:outline-red-600": assignment_submission.errors[:assignment_id].any?}] %>
   </div>
 
-  <div class="field">
-    <%= form.label :file, "Upload File" %><br>
-    <%= form.file_field :file, direct_upload: true %>
+  <div data-controller="drop-zone"
+       data-action="click->drop-zone#click
+                  dragover->drop-zone#dragover
+                  dragleave->drop-zone#dragleave
+                  drop->drop-zone#drop"
+       class="drop-zone border-2 border-dashed border-gray-400 rounded-lg p-6 text-center cursor-pointer">
+
+    <%= form.file_field :file,
+                        direct_upload: true,
+                        data: { drop_zone_target: "input" },
+                        class: "hidden" %>
+
+    <p data-drop-zone-target="label" class="text-gray-600"></p>
   </div>
 
   <div class="my-5">
