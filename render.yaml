@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: my-app-web
+
+
+  - type: worker
+    name: my-app-jobs
+    env: ruby
+    startCommand: "bundle exec rake solid_queue:start"
+
+
