@@ -7,11 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50b84593-70f3-4fc7-9e60-d47f12e1c75d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/copyleaks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/copyleaks_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/jobs/plagiarism_check_job.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/jobs/plagiarism_check_job.rb" afterDir="false" />
-    </list>
+    <list default="true" id="50b84593-70f3-4fc7-9e60-d47f12e1c75d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,7 +151,7 @@
       <workItem from="1745884199660" duration="7269000" />
       <workItem from="1745907608223" duration="3795000" />
       <workItem from="1745921064757" duration="1282000" />
-      <workItem from="1746129754837" duration="6513000" />
+      <workItem from="1746129754837" duration="6841000" />
     </task>
     <servers />
   </component>
