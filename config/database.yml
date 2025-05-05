@@ -40,3 +40,8 @@ production:
     <<: *default
     adapter: postgresql
     url: <%= ENV.fetch("DATABASE_URL") %>
+
+  cache:
+    <<: *default
+    adapter: postgresql
+    url: <%= ENV.fetch("DATABASE_URL") %>
