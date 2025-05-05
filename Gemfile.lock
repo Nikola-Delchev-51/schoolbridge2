@@ -402,6 +402,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  aws-sdk-core (~> 3.142)
   aws-sdk-s3 (~> 1.170.0)
   bootsnap
   brakeman

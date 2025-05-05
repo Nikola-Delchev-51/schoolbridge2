@@ -36,6 +36,7 @@ gem "devise"
 
 gem "plagiarism-checker", "~> 3.4"
 
+gem "aws-sdk-core", "~> 3.142"
 gem "aws-sdk-s3", "~> 1.170.0"
 
 # Reduces boot times through caching; required in config/boot.rb
