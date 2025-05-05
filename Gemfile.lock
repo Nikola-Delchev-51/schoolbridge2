@@ -197,6 +197,7 @@ GEM
     parser (3.3.8.0)
       ast (~> 2.4.1)
       racc
+    pg (1.5.9)
     plagiarism-checker (3.4.0)
     pp (0.6.2)
       prettyprint
@@ -391,6 +392,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   kamal
+  pg
   plagiarism-checker (~> 3.4)
   propshaft
   puma (>= 5.0)
@@ -400,7 +402,7 @@ DEPENDENCIES
   solid_cable
   solid_cache
   solid_queue
-  sqlite3 (>= 2.1)
+  sqlite3
   stimulus-rails
   tailwindcss-rails
   thruster
