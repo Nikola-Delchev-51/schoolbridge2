@@ -2,5 +2,14 @@
 
 require_relative "../config/environment"
 require "solid_queue/cli"
+require "logger"
+
+
+stdout_logger          = Logger.new($stdout)
+stdout_logger.level    = Logger::INFO
+stdout_logger.formatter = Logger::Formatter.new
+
+Rails.logger           = stdout_logger
+SolidQueue.logger      = stdout_logger
 
 SolidQueue::Cli.start(ARGV)
