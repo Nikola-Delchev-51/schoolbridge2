@@ -23,7 +23,7 @@ amazon:
   endpoint:           <%= ENV["S3_ENDPOINT"] %>
   force_path_style:   <%= ENV["S3_FORCE_PATH_STYLE"] %>
   upload:
-    checksum: ~
+    checksum:
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:
