@@ -6,5 +6,5 @@ class ClassCohort < ApplicationRecord
              class_name:  "Student",
              dependent:   :nullify
 
-  has_many :subjects, through: :grade
+  has_many :subjects, dependent: :destroy
 end
