@@ -27,11 +27,6 @@
   </div>
 
   <div class="my-5">
-    <%= form.label :grade_id %>
-    <%= form.text_field :grade_id, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": subject.errors[:grade_id].none?, "border-red-400 focus:outline-red-600": subject.errors[:grade_id].any?}] %>
-  </div>
-
-  <div class="my-5">
     <%= form.label :class_cohort_id %>
     <%= form.text_field :class_cohort_id, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": subject.errors[:class_cohort_id].none?, "border-red-400 focus:outline-red-600": subject.errors[:class_cohort_id].any?}] %>
   </div>

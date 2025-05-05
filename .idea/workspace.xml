@@ -9,7 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="50b84593-70f3-4fc7-9e60-d47f12e1c75d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/subjects/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/subjects/_form.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +143,7 @@
       </set>
     </attachedChunks>
   </component>
-  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="false" RAILS_SPRING_PRE_LOADER_OPTION="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="50b84593-70f3-4fc7-9e60-d47f12e1c75d" name="Changes" comment="" />
@@ -154,7 +155,8 @@
       <workItem from="1745884199660" duration="7269000" />
       <workItem from="1745907608223" duration="3795000" />
       <workItem from="1745921064757" duration="1282000" />
-      <workItem from="1746129754837" duration="7985000" />
+      <workItem from="1746129754837" duration="8891000" />
+      <workItem from="1746461985344" duration="192000" />
     </task>
     <servers />
   </component>
